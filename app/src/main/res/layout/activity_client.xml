@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back4"
+    tools:context=".clientActivity">
+
+    <ImageView
+        android:id="@+id/image_viewCli"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/client"/>
+
+    <EditText
+        android:id="@+id/clName"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Client Name"
+        android:textSize="30sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center" />
+    <EditText
+        android:id="@+id/clDescription"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Client Description"
+        android:layout_below="@+id/clName"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:id="@+id/clDate"
+        android:hint="Meeting Date/Month"
+        android:gravity="center"
+        android:layout_below="@+id/clDescription"
+        android:layout_marginBottom="10dp"
+
+        ></EditText>
+
+
+    <Button
+        android:id="@+id/btnbrowse"
+        android:layout_width="194dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/clDate"
+        android:layout_marginLeft="5dp"
+        android:text="Browse" />
+
+    <Button
+        android:id="@+id/btnupload"
+        android:layout_width="194dp"
+        android:layout_height="61dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@id/btnbrowse"
+        android:layout_below="@+id/clDate"
+        android:layout_marginTop="10dp"
+        android:text="Upload" />
+
+
+
+
+</RelativeLayout>

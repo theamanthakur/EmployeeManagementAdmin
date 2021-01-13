@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="#ffffff"
+    app:cardCornerRadius="1dp"
+    app:cardElevation="3dp"
+    app:contentPadding="4dp"
+
+    android:foreground="?selectableItemBackground"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp" >
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/item_image"
+            android:src="@drawable/task"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textName"
+            android:text="Employee Name"
+            android:layout_toRightOf="@+id/item_image"
+            android:layout_alignParentTop="true"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_desc"
+            android:layout_marginTop="4dp"
+            android:text="Short Description"
+            android:textColor="#E37718"
+            android:layout_toRightOf="@+id/item_image"
+            android:layout_below="@+id/textName"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#C50F0F"
+            android:id="@+id/item_date"
+            android:layout_marginTop="10dp"
+            android:text="Deadline"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/item_image"
+            android:layout_below="@+id/item_desc"
+            android:textSize="20sp"
+            />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/btnImgDelete"
+            android:clickable="true"
+            android:background="@drawable/ic_baseline_delete_24"
+            android:layout_below="@id/item_date"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/item_image"
+            >
+        </ImageButton>
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/btnImgEdit"
+            android:clickable="true"
+            android:background="@drawable/ic_baseline_edit_24"
+            android:layout_below="@id/item_date"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@+id/btnImgDelete"
+            >
+        </ImageButton>
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

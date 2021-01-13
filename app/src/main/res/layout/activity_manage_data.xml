@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back5"
+    tools:context=".manageDataActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textAbout"
+        android:text="CLICK TO MANAGE FOLLOWING ACTIVITY DATA"
+        android:textSize="24sp"
+        android:layout_marginTop="50dp"
+        >
+    </TextView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btntaskUpdate"
+        android:text="Edit/Delete Tasks"
+        android:layout_below="@+id/textAbout"
+        android:layout_marginTop="50dp"
+        >
+    </Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnProUpdate"
+        android:text="Edit/Delete Project"
+        android:layout_below="@+id/btntaskUpdate"
+        android:layout_marginTop="50dp"
+        >
+    </Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCliUpdate"
+        android:text="Edit/Delete Client"
+        android:layout_below="@+id/btnProUpdate"
+        android:layout_marginTop="50dp"
+        >
+    </Button>
+</RelativeLayout>
